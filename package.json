@@ -35,7 +35,15 @@
     "statistics",
     "fft",
     "random",
-    "scientific"
+    "scientific",
+    "typescript",
+    "array",
+    "vector",
+    "multidimensional",
+    "broadcasting",
+    "signal-processing",
+    "data-science",
+    "machine-learning"
   ],
   "author": "Snivio Bragança",
   "license": "MIT",
@@ -53,6 +61,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
-  }
+    "url": "https://github.com/Snivio/numpyjs"
+  },
+  "homepage": "https://github.com/Snivio/numpyjs#readme",
+  "bugs": {
+    "url": "https://github.com/Snivio/numpyjs/issues"
+  },
+  "sideEffects": false,
+  "type": "module"
 }
