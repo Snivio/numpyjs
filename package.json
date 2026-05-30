@@ -1,5 +1,5 @@
 {
-  "name": "numpyjs",
+  "name": "numpy-js",
   "version": "1.0.0",
   "description": "A comprehensive NumPy-like numerical computing library for TypeScript/JavaScript",
   "main": "dist/index.js",
