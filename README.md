@@ -1,4 +1,4 @@
-# numpy-js
+# tensorly
 
 NumPy, but for TypeScript. No Python runtime, no WASM blobs, no nonsense — just typed arrays and math.
 
@@ -9,7 +9,7 @@ If you've ever wished you could `np.linalg.solve()` in a Node script without spi
 ## Install
 
 ```bash
-npm install numpy-js
+npm install tensorly
 ```
 
 Works in Node 16+, Bun, Deno, and any bundler (Vite, webpack, esbuild). Ships ESM + CJS + full `.d.ts` types.
@@ -19,7 +19,7 @@ Works in Node 16+, Bun, Deno, and any bundler (Vite, webpack, esbuild). Ships ES
 ## Quick Start
 
 ```typescript
-import np, { array, zeros, arange, linspace } from "numpy-js";
+import np, { array, zeros, arange, linspace } from "tensorly";
 
 // vectors & matrices
 const v = array([1, 2, 3, 4, 5]);
