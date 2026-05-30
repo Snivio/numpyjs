@@ -1,6 +1,6 @@
 # @snivio/numpy
 
-NumPy, but for TypeScript. No Python runtime, no WASM blobs, no nonsense — just typed arrays and math.
+NumPy, but for TypeScript. No Python runtime, no WASM blobs, no nonsense. Just typed arrays and math.
 
 If you've ever wished you could `np.linalg.solve()` in a Node script without spinning up a Jupyter notebook, this is for you.
 
@@ -25,7 +25,7 @@ import np, { array, zeros, arange, linspace } from "@snivio/numpy";
 const v = array([1, 2, 3, 4, 5]);
 const m = arange(0, 12).reshape([3, 4]);
 
-// element-wise math — broadcasting just works
+// element-wise math (broadcasting just works)
 const doubled = np.multiply(v, 2);
 const normed = np.divide(v, np.sqrt(np.sum(np.power(v, 2))));
 
@@ -146,7 +146,7 @@ np.meshgrid(x, y)         np.outer(a, b)
 
 ## Dtypes
 
-Backed by real TypedArrays — no boxing overhead.
+Backed by real TypedArrays, no boxing overhead.
 
 `float64` (default) · `float32` · `int32` · `int16` · `int8` · `uint32` · `uint16` · `uint8` · `bool`
 
@@ -159,7 +159,7 @@ const b = a.astype("int32");
 
 ## Why This Exists
 
-Python's NumPy is fantastic but sometimes you just need to crunch numbers in a TypeScript codebase without crossing language boundaries. This library gives you the same mental model — shapes, broadcasting, axis-based reductions — in a package you can `import` and go.
+Python's NumPy is fantastic but sometimes you just need to crunch numbers in a TypeScript codebase without crossing language boundaries. This library gives you the same mental model (shapes, broadcasting, axis-based reductions) in a package you can `import` and go.
 
 Not a 1:1 port (no C extensions here), but covers the 90% of NumPy that most people actually use day-to-day.
 
@@ -172,7 +172,7 @@ PRs welcome. Run the test suite before submitting:
 ```bash
 npm test        # 68 tests via vitest
 npm run lint    # eslint
-npm run build   # tsup → cjs + esm + .d.ts
+npm run build   # tsup, outputs cjs + esm + .d.ts
 ```
 
 ---
